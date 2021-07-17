@@ -1,0 +1,16 @@
+.div-card{
+    display: flex;
+    margin-right: 30px;
+    align-items: center;
+    
+}
+
+.text-card{
+    margin-left: 10px;
+   
+}
+.container-idcard{
+    border: 2px solid black;
+    align-content: center;
+    margin: 10px 10px;
+}
