@@ -1,39 +1,23 @@
 import { Component } from "react";
 import './greetings.css'
 
-const languages = {
-  de: 'Guten Tag',
-  fr: 'Bonjour',
-  es: 'Hola',
-  en: 'Hello',
-  pt: 'Olá',
-  jp: 'Konnichiwa'
-}
 
 
 
 function Greetings ({lang, children}){
- let languages =''
-  if(lang === 'de'){
-    languages = 'Hallo'
-  }
-   else if(lang === 'en'){
-    languages = 'Hello'
-  }
-  else if(lang ==='pt'){
-    languages = 'Olá'
-  }
-  else if(lang === 'es'){
-    languages = 'Hola'
-  }
-  else if(lang === 'fr'){
-    languages = 'Bonjour'
+  const greeting = {
+    de: 'Guten Tag',
+    fr: 'Bonjour',
+    es: 'Hola',
+    en: 'Hello',
+    pt: 'Olá',
+    jp: 'Konnichiwa'
   }
 
   return(
     <div className = 'container'>
       <h3 >
-       {`${languages} ${children}`}
+       {`${greeting[lang]} ${children}`}
       </h3>
     </div>
   )
